@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://altumsoftware.com/sitemap.xml
+Sitemap: https://altumsoftware.solutions/sitemap.xml
