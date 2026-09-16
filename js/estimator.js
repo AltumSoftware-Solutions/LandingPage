@@ -76,6 +76,16 @@ function initProjectEstimator() {
       estimatorState.speedMultiplier = multiplier;
       estimatorState.speedName = speedName;
 
+      // Sync .checked active class across all speed radio options
+      speedRadios.forEach(r => {
+        const parent = r.closest('.checkbox-label');
+        if (r.checked) {
+          parent?.classList.add('checked');
+        } else {
+          parent?.classList.remove('checked');
+        }
+      });
+
       recalculateEstimate();
     });
   });
@@ -102,8 +112,9 @@ function initProjectEstimator() {
     estimatorState.featureWeeks = totalFeaturesWeeks;
 
     const baseSum = (estimatorState.basePrice + totalFeaturesCost) * estimatorState.speedMultiplier;
-    estimatorState.totalPriceMin = Math.round(baseSum * 0.95);
-    estimatorState.totalPriceMax = Math.round(baseSum * 1.25);
+    // Round to nearest 10 for clean, professional figures
+    estimatorState.totalPriceMin = Math.round((baseSum * 0.95) / 10) * 10;
+    estimatorState.totalPriceMax = Math.round((baseSum * 1.25) / 10) * 10;
     
     // Calculate total weeks adjusted for speed
     let weeksSum = Math.max(1, estimatorState.baseWeeks + Math.round(totalFeaturesWeeks));
@@ -127,7 +138,14 @@ function initProjectEstimator() {
     if (summaryTimeline) summaryTimeline.textContent = `${estimatorState.speedName} (~${estimatorState.totalWeeks} semanas)`;
 
     if (summaryPriceDisplay) {
-      summaryPriceDisplay.textContent = `$${estimatorState.totalPriceMin.toLocaleString()} - $${estimatorState.totalPriceMax.toLocaleString()} USD`;
+      const newPriceText = `$${estimatorState.totalPriceMin.toLocaleString()} - $${estimatorState.totalPriceMax.toLocaleString()} USD`;
+      if (summaryPriceDisplay.textContent !== newPriceText) {
+        summaryPriceDisplay.textContent = newPriceText;
+        summaryPriceDisplay.classList.remove('price-bump');
+        // Trigger CSS reflow to re-run animation
+        void summaryPriceDisplay.offsetWidth;
+        summaryPriceDisplay.classList.add('price-bump');
+      }
     }
     if (summaryWeeksDisplay) {
       summaryWeeksDisplay.textContent = `Tiempo Estimado de Entrega: ~${estimatorState.totalWeeks} semanas`;
