@@ -20,17 +20,17 @@ function initProjectEstimator() {
   // State
   const estimatorState = {
     type: 'web_app',
-    typeName: 'Plataforma Web / SaaS',
-    basePrice: 1200,
-    baseWeeks: 3,
+    typeName: 'Plataforma Web / SaaS (MVP)',
+    basePrice: 550,
+    baseWeeks: 2,
     features: [],
     featureCost: 0,
     featureWeeks: 0,
     speedMultiplier: 1.0,
     speedName: 'Estándar',
-    totalPriceMin: 1200,
-    totalPriceMax: 1600,
-    totalWeeks: 3
+    totalPriceMin: 550,
+    totalPriceMax: 750,
+    totalWeeks: 2
   };
 
   // 1. Project Type Selection
@@ -41,8 +41,8 @@ function initProjectEstimator() {
 
       const typeKey = card.dataset.type;
       const typeName = card.dataset.name;
-      const baseCost = parseInt(card.dataset.cost, 10) || 1200;
-      const baseTime = parseInt(card.dataset.weeks, 10) || 3;
+      const baseCost = parseInt(card.dataset.cost, 10) || 550;
+      const baseTime = parseInt(card.dataset.weeks, 10) || 2;
 
       estimatorState.type = typeKey;
       estimatorState.typeName = typeName;
@@ -106,9 +106,9 @@ function initProjectEstimator() {
     estimatorState.totalPriceMax = Math.round(baseSum * 1.25);
     
     // Calculate total weeks adjusted for speed
-    let weeksSum = estimatorState.baseWeeks + Math.round(totalFeaturesWeeks);
+    let weeksSum = Math.max(1, estimatorState.baseWeeks + Math.round(totalFeaturesWeeks));
     if (estimatorState.speedMultiplier > 1.2) {
-      weeksSum = Math.max(2, Math.round(weeksSum * 0.75)); // Faster delivery
+      weeksSum = Math.max(1, Math.round(weeksSum * 0.75)); // Faster delivery
     }
     estimatorState.totalWeeks = weeksSum;
 
