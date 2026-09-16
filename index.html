@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Altum Software | Desarrollo de Software a la Medida, Apps & IA</title>
+  <meta name="title" content="Altum Software | Desarrollo de Software a la Medida, Apps & IA" />
+  <meta name="description" content="Empresa especializada en desarrollo de software a la medida, aplicaciones web, apps móviles (iOS/Android), soluciones de Inteligencia Artificial y Cloud DevOps de alto rendimiento." />
+  <meta name="keywords" content="desarrollo de software, software a la medida, desarrollo web, aplicaciones móviles, flutter, react native, inteligencia artificial, agentes IA, cloud devops, altum software" />
+  <meta name="author" content="Altum Software" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://altumsoftware.com/" />
+  <meta property="og:title" content="Altum Software | Desarrollo de Software a la Medida, Apps & IA" />
+  <meta property="og:description" content="Transformamos ideas y procesos empresariales en software de alto impacto, escalable y seguro." />
+  <meta property="og:image" content="assets/images/hero_tech_mockup.jpg" />
+  <meta property="og:locale" content="es_LA" />
+
+  <!-- Twitter Meta Tags -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://altumsoftware.com/" />
+  <meta property="twitter:title" content="Altum Software | Desarrollo de Software a la Medida" />
+  <meta property="twitter:description" content="Ingeniería de software de clase mundial para startups y empresas." />
+  <meta property="twitter:image" content="assets/images/hero_tech_mockup.jpg" />
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233B82F6'/><path d='M25 70 L50 25 L75 70 L58 70 L50 52 L42 70 Z' fill='white'/><circle cx='50' cy='38' r='5' fill='%2306B6D4'/></svg>" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Altum Software",
+    "url": "https://altumsoftware.com",
+    "logo": "https://altumsoftware.com/assets/images/logo.png",
+    "description": "Empresa especializada en desarrollo de software personalizado, aplicaciones web, móviles e inteligencia artificial.",
+    "sameAs": [
+      "https://github.com",
+      "https://linkedin.com",
+      "https://twitter.com"
+    ],
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "serviceType": "Custom Software Development"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Ambient Glow Lights -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+  <div class="bg-grid-pattern"></div>
+
+  <!-- ==========================================================================
+       Header / Navbar
+       ========================================================================== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Altum Software Inicio">
+        <div class="logo-icon">
+          <i class="fas fa-cube"></i>
+        </div>
+        <div class="logo-text">Altum<span>Software</span></div>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#cotizador" class="nav-link">Cotizador</a></li>
+          <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+          <li><a href="#proceso" class="nav-link">Metodología</a></li>
+          <li><a href="#portafolio" class="nav-link">Casos de Éxito</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Switcher -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Cambiar Tema Claro / Oscuro" title="Cambiar Tema">
+          <i class="fas fa-sun"></i>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#cotizador" class="btn btn-primary btn-sm">
+          <i class="fas fa-calculator"></i> Cotizar Proyecto
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileToggleBtn" class="mobile-toggle-btn" aria-label="Abrir Menú Móvil">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="mobile-menu">
+      <ul class="nav-links">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#cotizador" class="nav-link">Cotizador Interactivo</a></li>
+        <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+        <li><a href="#proceso" class="nav-link">Metodología</a></li>
+        <li><a href="#portafolio" class="nav-link">Casos de Éxito</a></li>
+        <li><a href="#faq" class="nav-link">Preguntas Frecuentes</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto Directo</a></li>
+      </ul>
+      <a href="#cotizador" class="btn btn-primary">
+        <i class="fas fa-calculator"></i> Iniciar Cotización
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero-section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-badge-container">
+            <span class="hero-badge">
+              <span class="pulse-dot"></span>
+              🚀 Innovación Digital & Software Enterprise
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Transformamos Ideas en <span class="gradient-text">Software de Alto Rendimiento</span>
+          </h1>
+
+          <p class="hero-description">
+            Diseñamos y desarrollamos aplicaciones web, apps móviles multiplataforma, sistemas con Inteligencia Artificial e infraestructuras Cloud de escala mundial para empresas con visión de futuro.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#cotizador" class="btn btn-primary btn-lg">
+              <i class="fas fa-bolt"></i> Cotizar Mi Proyecto
+            </a>
+            <a href="#portafolio" class="btn btn-secondary btn-lg">
+              <i class="fas fa-layer-group"></i> Ver Casos de Estudio
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>+85</h3>
+              <p>Proyectos Entregados</p>
+            </div>
+            <div class="stat-item">
+              <h3>99.9%</h3>
+              <p>Uptime & SLA Cloud</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Código Propietario</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay-1">
+          <div class="hero-card-wrapper animate-float">
+            <div class="hero-card-inner">
+              <img src="assets/images/hero_tech_mockup.jpg" alt="Altum Software Dashboard y Arquitectura Cloud" width="800" height="450" />
+            </div>
+
+            <!-- Floating Micro Badges -->
+            <div class="floating-badge floating-badge-1 animate-float-reverse">
+              <div class="badge-icon-box emerald">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="badge-info">
+                <h5>Arquitectura SOC2</h5>
+                <span>100% Encriptada & Segura</span>
+              </div>
+            </div>
+
+            <div class="floating-badge floating-badge-2 animate-float">
+              <div class="badge-icon-box blue">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <div class="badge-info">
+                <h5>Latencia Ultrabaja</h5>
+                <span>Respuesta API &lt; 15ms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Trust Logos / Ticker
+         ========================================================================== -->
+    <section class="trust-section">
+      <div class="container">
+        <p class="trust-title">TECNOLOGÍAS Y ESTÁNDARES DE CLASE MUNDIAL CON LOS QUE TRABAJAMOS</p>
+        <div class="trust-logos">
+          <div class="trust-logo-item"><i class="fab fa-react"></i> React & Next.js</div>
+          <div class="trust-logo-item"><i class="fab fa-node-js"></i> Node.js & Nest</div>
+          <div class="trust-logo-item"><i class="fab fa-python"></i> Python & FastAPI</div>
+          <div class="trust-logo-item"><i class="fab fa-aws"></i> Amazon Web Services</div>
+          <div class="trust-logo-item"><i class="fab fa-docker"></i> Docker & Kubernetes</div>
+          <div class="trust-logo-item"><i class="fas fa-database"></i> PostgreSQL & Redis</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Services Section
+         ========================================================================== -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge"><i class="fas fa-code-branch"></i> Soluciones Especializadas</span>
+          <h2 class="section-title">Servicios de Ingeniería de Software para <span class="gradient-text">Escalar tu Negocio</span></h2>
+          <p class="section-subtitle">Aportamos experiencia técnica integral desde la concepción de la idea hasta el despliegue y mantenimiento continuo.</p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Service 1 -->
+          <div class="service-card reveal">
+            <div>
+              <div class="service-icon-wrapper">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3 class="service-title">Desarrollo Web & SaaS a Medida</h3>
+              <p class="service-desc">
+                Plataformas web de alto impacto, paneles administrativos reactivos, sistemas SaaS multi-inquilino y portales empresariales construidos con arquitectura limpia.
+              </p>
+              <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> Single Page Applications (SPA & SSR)</li>
+                <li><i class="fas fa-check-circle"></i> Microservicios y APIs REST / GraphQL</li>
+                <li><i class="fas fa-check-circle"></i> Integración con pasarelas de pago (Stripe)</li>
+              </ul>
+            </div>
+            <a href="#cotizador" class="service-cta">
+              Cotizar Desarrollo Web <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card reveal reveal-delay-1">
+            <div>
+              <div class="service-icon-wrapper" style="color: var(--accent-purple);">
+                <i class="fas fa-mobile-screen-button"></i>
+              </div>
+              <h3 class="service-title">Aplicaciones Móviles Multiplataforma</h3>
+              <p class="service-desc">
+                Apps nativas e híbridas para iOS y Android con Flutter y React Native. Experiencias fluidas a 60fps con modo offline y notificaciones push en tiempo real.
+              </p>
+              <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> Publicación y gestión en App Store & Play Store</li>
+                <li><i class="fas fa-check-circle"></i> Geolocalización, biometría y Bluetooth BLE</li>
+                <li><i class="fas fa-check-circle"></i> Sincronización instantánea en la nube</li>
+              </ul>
+            </div>
+            <a href="#cotizador" class="service-cta">
+              Cotizar App Móvil <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card reveal reveal-delay-2">
+            <div>
+              <div class="service-icon-wrapper" style="color: var(--accent-cyan);">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3 class="service-title">Inteligencia Artificial & Agentes Autónomos</h3>
+              <p class="service-desc">
+                Integración de modelos LLM (GPT-4, Claude), agentes inteligentes para automatización de procesos internos, chatbots de atención y modelos predictivos de datos.
+              </p>
+              <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> Conexión de LLMs con bases de conocimiento</li>
+                <li><i class="fas fa-check-circle"></i> Automatización de workflows y extracción de datos</li>
+                <li><i class="fas fa-check-circle"></i> Agentes con ejecución de funciones y herramientas</li>
+              </ul>
+            </div>
+            <a href="#cotizador" class="service-cta">
+              Cotizar Solución con IA <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card reveal">
+            <div>
+              <div class="service-icon-wrapper" style="color: var(--accent-emerald);">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h3 class="service-title">Cloud Infrastructure & DevOps</h3>
+              <p class="service-desc">
+                Arquitecturas en AWS, Google Cloud y Azure diseñadas para alta disponibilidad, autoscaling automático, seguridad perimetral y pipelines CI/CD automatizados.
+              </p>
+              <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> Contenedores con Docker y Kubernetes</li>
+                <li><i class="fas fa-check-circle"></i> Infraestructura como código con Terraform</li>
+                <li><i class="fas fa-check-circle"></i> Monitoreo 24/7 y respaldos continuos</li>
+              </ul>
+            </div>
+            <a href="#cotizador" class="service-cta">
+              Cotizar Arquitectura Cloud <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card reveal reveal-delay-1">
+            <div>
+              <div class="service-icon-wrapper" style="color: #EC4899;">
+                <i class="fas fa-pen-nib"></i>
+              </div>
+              <h3 class="service-title">Diseño UI/UX & Sistemas de Diseño</h3>
+              <p class="service-desc">
+                Diseño de productos digitales centrado en el usuario. Wireframes, prototipos interactivos en Figma de alta fidelidad y Design Systems escalables para desarrolladores.
+              </p>
+              <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> Pruebas de usabilidad e investigación UX</li>
+                <li><i class="fas fa-check-circle"></i> Sistemas de componentes reutilizables</li>
+                <li><i class="fas fa-check-circle"></i> Optimización de conversión de embudos</li>
+              </ul>
+            </div>
+            <a href="#cotizador" class="service-cta">
+              Cotizar Diseño UI/UX <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card reveal reveal-delay-2">
+            <div>
+              <div class="service-icon-wrapper" style="color: #F59E0B;">
+                <i class="fas fa-shield-virus"></i>
+              </div>
+              <h3 class="service-title">Auditoría, Refactor & Seguridad</h3>
+              <p class="service-desc">
+                Modernización de código heredado (legacy), optimización de bases de datos, auditorías de vulnerabilidades de seguridad y optimización de velocidad de carga.
+              </p>
+              <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> Migración de monolitos a microservicios</li>
+                <li><i class="fas fa-check-circle"></i> Detección de fugas de memoria y cuellos de botella</li>
+                <li><i class="fas fa-check-circle"></i> Cumplimiento de estándares OWASP Top 10</li>
+              </ul>
+            </div>
+            <a href="#cotizador" class="service-cta">
+              Cotizar Auditoría <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Interactive Project Estimator Section
+         ========================================================================== -->
+    <section class="section" id="cotizador" style="background: rgba(255,255,255,0.01);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge"><i class="fas fa-calculator"></i> Presupuesto Inmediato</span>
+          <h2 class="section-title">Cotizador Interactivo de <span class="gradient-text">Proyectos de Software</span></h2>
+          <p class="section-subtitle">Configura el tipo de proyecto, los módulos requeridos y los tiempos deseados para obtener una estimación en tiempo real.</p>
+        </div>
+
+        <div class="estimator-wrapper reveal">
+          <form id="estimatorForm" onsubmit="return false;">
+            <div class="estimator-grid">
+              
+              <!-- Left Column: Steps -->
+              <div class="estimator-steps-container">
+                
+                <!-- Step 1: Project Type -->
+                <div class="estimator-step-group">
+                  <div class="estimator-step-title">
+                    <span class="step-num">1</span>
+                    <span>Selecciona el Tipo de Solución</span>
+                  </div>
+                  <div class="options-grid">
+                    <div class="option-card project-type-option selected" data-type="web_app" data-name="Plataforma Web / SaaS" data-cost="1200" data-weeks="3">
+                      <i class="fas fa-globe"></i>
+                      <span>Web / SaaS</span>
+                    </div>
+                    <div class="option-card project-type-option" data-type="mobile_app" data-name="App Móvil (iOS & Android)" data-cost="1800" data-weeks="4">
+                      <i class="fas fa-mobile-screen"></i>
+                      <span>App Móvil</span>
+                    </div>
+                    <div class="option-card project-type-option" data-type="ai_solution" data-name="Solución con Inteligencia Artificial" data-cost="2200" data-weeks="4">
+                      <i class="fas fa-robot"></i>
+                      <span>IA & Agentes</span>
+                    </div>
+                    <div class="option-card project-type-option" data-type="ecommerce" data-name="E-Commerce Enterprise B2B" data-cost="1500" data-weeks="3">
+                      <i class="fas fa-cart-shopping"></i>
+                      <span>E-Commerce</span>
+                    </div>
+                    <div class="option-card project-type-option" data-type="custom_system" data-name="Sistema Empresarial a la Medida" data-cost="2500" data-weeks="5">
+                      <i class="fas fa-server"></i>
+                      <span>Sistema ERP/CRM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Step 2: Features Checklist -->
+                <div class="estimator-step-group">
+                  <div class="estimator-step-title">
+                    <span class="step-num">2</span>
+                    <span>Elige los Módulos y Funcionalidades Clave</span>
+                  </div>
+                  <div class="features-checklist">
+                    <label class="checkbox-label checked">
+                      <input type="checkbox" class="feature-checkbox" value="auth" data-name="Autenticación & Roles" data-cost="300" data-weeks="0.5" checked />
+                      <span>Autenticación & Permisos de Usuario</span>
+                    </label>
+
+                    <label class="checkbox-label">
+                      <input type="checkbox" class="feature-checkbox" value="payments" data-name="Pasarelas de Pago" data-cost="450" data-weeks="1" />
+                      <span>Pasarelas de Pago (Stripe / PayPal)</span>
+                    </label>
+
+                    <label class="checkbox-label checked">
+                      <input type="checkbox" class="feature-checkbox" value="admin_panel" data-name="Panel Administrativo" data-cost="500" data-weeks="1" checked />
+                      <span>Panel de Administración & Métricas</span>
+                    </label>
+
+                    <label class="checkbox-label">
+                      <input type="checkbox" class="feature-checkbox" value="api_integrations" data-name="Integraciones API" data-cost="400" data-weeks="0.5" />
+                      <span>Integración de APIs y Webhooks</span>
+                    </label>
+
+                    <label class="checkbox-label">
+                      <input type="checkbox" class="feature-checkbox" value="ai_agent" data-name="Agente IA / Chatbot" data-cost="750" data-weeks="1.5" />
+                      <span>Asistente Inteligente / Agente IA</span>
+                    </label>
+
+                    <label class="checkbox-label">
+                      <input type="checkbox" class="feature-checkbox" value="notifications" data-name="Notificaciones Push & Email" data-cost="250" data-weeks="0.5" />
+                      <span>Notificaciones Push y Correos</span>
+                    </label>
+
+                    <label class="checkbox-label">
+                      <input type="checkbox" class="feature-checkbox" value="cloud_cicd" data-name="Cloud CI/CD AWS/GCP" data-cost="400" data-weeks="0.5" />
+                      <span>Infraestructura Cloud con CI/CD</span>
+                    </label>
+
+                    <label class="checkbox-label">
+                      <input type="checkbox" class="feature-checkbox" value="multilang" data-name="Soporte Multi-idioma" data-cost="200" data-weeks="0.5" />
+                      <span>Soporte Multi-idioma (i18n)</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Step 3: Delivery Timeline -->
+                <div class="estimator-step-group" style="margin-bottom: 0;">
+                  <div class="estimator-step-title">
+                    <span class="step-num">3</span>
+                    <span>Velocidad de Entrega Deseada</span>
+                  </div>
+                  <div class="timeline-options">
+                    <label class="checkbox-label checked" style="justify-content: center; text-align: center;">
+                      <input type="radio" name="projectSpeed" value="1.0" data-speed-name="Estándar" checked />
+                      <span>Estándar (Sprints Ágiles)</span>
+                    </label>
+                    <label class="checkbox-label" style="justify-content: center; text-align: center;">
+                      <input type="radio" name="projectSpeed" value="1.2" data-speed-name="Acelerado" />
+                      <span>Acelerado (-25% tiempo)</span>
+                    </label>
+                    <label class="checkbox-label" style="justify-content: center; text-align: center;">
+                      <input type="radio" name="projectSpeed" value="1.45" data-speed-name="Sprints Dedicados 24/7" />
+                      <span>Sprints Dedicados</span>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Column: Live Summary Card -->
+              <div class="estimator-summary-box">
+                <div class="summary-header">
+                  <h4>Resumen de Estimación</h4>
+                  <p>Cálculo preliminar basado en métricas estándar de desarrollo ágil.</p>
+                </div>
+
+                <div class="summary-details">
+                  <div class="summary-row">
+                    <span class="summary-label">Tipo:</span>
+                    <span class="summary-value" id="summaryProjectType">Plataforma Web / SaaS</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-label">Alcance:</span>
+                    <span class="summary-value" id="summaryFeaturesCount">2 módulos seleccionados</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-label">Modalidad:</span>
+                    <span class="summary-value highlight" id="summaryTimeline">Estándar (~4 semanas)</span>
+                  </div>
+                </div>
+
+                <div class="estimate-result-box">
+                  <div class="est-label">Rango Estimado de Inversión</div>
+                  <div class="est-price" id="summaryPriceDisplay">$1,900 - $2,500 USD</div>
+                  <div class="est-time" id="summaryWeeksDisplay">Tiempo Estimado de Entrega: ~4 semanas</div>
+                </div>
+
+                <div class="summary-actions">
+                  <button type="button" id="estimatorSendWhatsApp" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Enviar Cotización a WhatsApp
+                  </button>
+                  <button type="button" id="estimatorTransferForm" class="btn btn-secondary">
+                    <i class="fas fa-paper-plane"></i> Llenar Formulario con estos Datos
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Tech Stack Ecosystem
+         ========================================================================== -->
+    <section class="section" id="tecnologias">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge"><i class="fas fa-layer-group"></i> Stack de Vanguardia</span>
+          <h2 class="section-title">Tecnologías Modernas y <span class="gradient-text">Probadas en Producción</span></h2>
+          <p class="section-subtitle">Seleccionamos las herramientas más eficientes, mantenibles y seguras del ecosistema global.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="tech-filters reveal">
+          <button class="tech-filter-btn active" data-filter="all">Todas</button>
+          <button class="tech-filter-btn" data-filter="frontend">Frontend</button>
+          <button class="tech-filter-btn" data-filter="backend">Backend & APIs</button>
+          <button class="tech-filter-btn" data-filter="mobile">Móvil</button>
+          <button class="tech-filter-btn" data-filter="cloud">Cloud & DevOps</button>
+          <button class="tech-filter-btn" data-filter="ai">IA & Data</button>
+          <button class="tech-filter-btn" data-filter="db">Bases de Datos</button>
+        </div>
+
+        <!-- Tech Grid -->
+        <div class="tech-grid reveal reveal-delay-1">
+          <div class="tech-card" data-category="frontend">
+            <i class="fab fa-react tech-icon"></i>
+            <div class="tech-name">React</div>
+            <span class="tech-category-tag">Frontend SPA</span>
+          </div>
+
+          <div class="tech-card" data-category="frontend">
+            <i class="fas fa-bolt tech-icon" style="color: #60A5FA;"></i>
+            <div class="tech-name">Next.js</div>
+            <span class="tech-category-tag">Fullstack SSR</span>
+          </div>
+
+          <div class="tech-card" data-category="frontend">
+            <i class="fab fa-js tech-icon" style="color: #3178C6;"></i>
+            <div class="tech-name">TypeScript</div>
+            <span class="tech-category-tag">Type Safety</span>
+          </div>
+
+          <div class="tech-card" data-category="frontend">
+            <i class="fab fa-vuejs tech-icon" style="color: #42B883;"></i>
+            <div class="tech-name">Vue.js</div>
+            <span class="tech-category-tag">Frontend UI</span>
+          </div>
+
+          <div class="tech-card" data-category="backend">
+            <i class="fab fa-node-js tech-icon" style="color: #339933;"></i>
+            <div class="tech-name">Node.js</div>
+            <span class="tech-category-tag">High Concurrency</span>
+          </div>
+
+          <div class="tech-card" data-category="backend">
+            <i class="fab fa-python tech-icon" style="color: #3776AB;"></i>
+            <div class="tech-name">Python FastAPI</div>
+            <span class="tech-category-tag">Microservicios & IA</span>
+          </div>
+
+          <div class="tech-card" data-category="backend">
+            <i class="fas fa-shield-halved tech-icon" style="color: #E0234E;"></i>
+            <div class="tech-name">NestJS</div>
+            <span class="tech-category-tag">Enterprise Backend</span>
+          </div>
+
+          <div class="tech-card" data-category="backend">
+            <i class="fab fa-golang tech-icon" style="color: #00ADD8;"></i>
+            <div class="tech-name">Go (Golang)</div>
+            <span class="tech-category-tag">Ultra Performance</span>
+          </div>
+
+          <div class="tech-card" data-category="mobile">
+            <i class="fas fa-mobile-button tech-icon" style="color: #02569B;"></i>
+            <div class="tech-name">Flutter</div>
+            <span class="tech-category-tag">iOS & Android</span>
+          </div>
+
+          <div class="tech-card" data-category="mobile">
+            <i class="fab fa-react tech-icon" style="color: #61DAFB;"></i>
+            <div class="tech-name">React Native</div>
+            <span class="tech-category-tag">Cross-Platform</span>
+          </div>
+
+          <div class="tech-card" data-category="ai">
+            <i class="fas fa-brain tech-icon" style="color: #10A37F;"></i>
+            <div class="tech-name">OpenAI / LLMs</div>
+            <span class="tech-category-tag">Agentes & NLP</span>
+          </div>
+
+          <div class="tech-card" data-category="ai">
+            <i class="fas fa-network-wired tech-icon" style="color: #8B5CF6;"></i>
+            <div class="tech-name">LangChain</div>
+            <span class="tech-category-tag">Orquestación IA</span>
+          </div>
+
+          <div class="tech-card" data-category="cloud">
+            <i class="fab fa-aws tech-icon" style="color: #FF9900;"></i>
+            <div class="tech-name">AWS Cloud</div>
+            <span class="tech-category-tag">ECS, S3, Lambda</span>
+          </div>
+
+          <div class="tech-card" data-category="cloud">
+            <i class="fab fa-docker tech-icon" style="color: #2496ED;"></i>
+            <div class="tech-name">Docker & K8s</div>
+            <span class="tech-category-tag">Containerization</span>
+          </div>
+
+          <div class="tech-card" data-category="db">
+            <i class="fas fa-database tech-icon" style="color: #336791;"></i>
+            <div class="tech-name">PostgreSQL</div>
+            <span class="tech-category-tag">Relacional ACID</span>
+          </div>
+
+          <div class="tech-card" data-category="db">
+            <i class="fas fa-cubes tech-icon" style="color: #DC382D;"></i>
+            <div class="tech-name">Redis</div>
+            <span class="tech-category-tag">In-Memory Cache</span>
+          </div>
+
+          <div class="tech-card" data-category="db">
+            <i class="fas fa-leaf tech-icon" style="color: #47A248;"></i>
+            <div class="tech-name">MongoDB</div>
+            <span class="tech-category-tag">NoSQL Document</span>
+          </div>
+
+          <div class="tech-card" data-category="cloud">
+            <i class="fab fa-git-alt tech-icon" style="color: #F05032;"></i>
+            <div class="tech-name">CI/CD Pipelines</div>
+            <span class="tech-category-tag">GitHub Actions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Methodology / Process Section
+         ========================================================================== -->
+    <section class="section" id="proceso">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge"><i class="fas fa-diagram-project"></i> Cómo Trabajamos</span>
+          <h2 class="section-title">Metodología Ágil: De la Idea a la <span class="gradient-text">Realidad en 5 Fases</span></h2>
+          <p class="section-subtitle">Garantizamos entregas puntuales, visibilidad absoluta y cero sorpresas en el presupuesto.</p>
+        </div>
+
+        <div class="process-grid">
+          <!-- Step 1 -->
+          <div class="process-card reveal">
+            <div class="process-step-badge">01</div>
+            <h3 class="process-title">Descubrimiento & Roadmap</h3>
+            <p class="process-desc">
+              Analizamos tus requerimientos de negocio, definimos el alcance técnico, la arquitectura ideal y creamos un cronograma claro con entregables semanales.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-card reveal reveal-delay-1">
+            <div class="process-step-badge" style="color: var(--accent-purple); border-color: var(--accent-purple-glow);">02</div>
+            <h3 class="process-title">UI/UX & Prototipado</h3>
+            <p class="process-desc">
+              Diseñamos la arquitectura de información y prototipos interactivos en Figma para validar la experiencia de usuario antes de escribir una sola línea de código.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-card reveal reveal-delay-2">
+            <div class="process-step-badge" style="color: var(--accent-cyan); border-color: var(--accent-cyan-glow);">03</div>
+            <h3 class="process-title">Desarrollo por Sprints</h3>
+            <p class="process-desc">
+              Construcción modular en ciclos quincenales. Tienes acceso continuo a un entorno de pruebas (Staging) para ver el avance real en vivo.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-card reveal reveal-delay-1">
+            <div class="process-step-badge" style="color: var(--accent-emerald); border-color: var(--accent-emerald-glow);">04</div>
+            <h3 class="process-title">QA & Pruebas Rigurosas</h3>
+            <p class="process-desc">
+              Pruebas unitarias, de integración, test de penetración de seguridad y estrés de carga para garantizar estabilidad del 100% bajo tráfico real.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="process-card reveal reveal-delay-2">
+            <div class="process-step-badge" style="color: #F59E0B; border-color: rgba(245, 158, 11, 0.4);">05</div>
+            <h3 class="process-title">Despliegue & Soporte</h3>
+            <p class="process-desc">
+              Lanzamiento en producción en tu nube propia con monitoreo activo, entrega de código fuente completo documentado y garantía post-entrega.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Case Studies / Portfolio Showcase
+         ========================================================================== -->
+    <section class="section" id="portafolio" style="background: rgba(255,255,255,0.01);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge"><i class="fas fa-briefcase"></i> Casos de Éxito</span>
+          <h2 class="section-title">Proyectos Destacados de <span class="gradient-text">Alto Impacto</span></h2>
+          <p class="section-subtitle">Casos reales donde nuestra ingeniería de software generó valor directo, eficiencia operativa y retorno financiero.</p>
+        </div>
+
+        <div class="portfolio-filters reveal">
+          <button class="tech-filter-btn portfolio-filter-btn active" data-filter="all">Todos los Proyectos</button>
+          <button class="tech-filter-btn portfolio-filter-btn" data-filter="fintech">Fintech & SaaS</button>
+          <button class="tech-filter-btn portfolio-filter-btn" data-filter="ai">Inteligencia Artificial</button>
+          <button class="tech-filter-btn portfolio-filter-btn" data-filter="logistics">Cloud & Logística</button>
+        </div>
+
+        <div class="grid-3">
+          <!-- Case 1: Fintech -->
+          <div class="portfolio-card reveal" data-category="fintech">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/images/case_fintech.jpg" alt="Nexus Fintech Dashboard" width="600" height="340" />
+              <span class="portfolio-category-badge">Fintech & Inversiones</span>
+            </div>
+            <div class="portfolio-content">
+              <div>
+                <h3 class="portfolio-title">Nexus Fintech: Analítica Bursátil en Tiempo Real</h3>
+                <p class="portfolio-desc">
+                  Plataforma financiera institucional para monitoreo de activos, pagos cripto y análisis predictivo de mercados con latencia ultrabaja.
+                </p>
+                <div class="portfolio-metrics-row">
+                  <div class="p-metric">
+                    <h5>&lt; 18ms</h5>
+                    <span>Latencia API</span>
+                  </div>
+                  <div class="p-metric">
+                    <h5>+$300M</h5>
+                    <span>Procesados</span>
+                  </div>
+                </div>
+                <div class="portfolio-tags">
+                  <span class="portfolio-tag">React</span>
+                  <span class="portfolio-tag">Node.js</span>
+                  <span class="portfolio-tag">WebSockets</span>
+                  <span class="portfolio-tag">PostgreSQL</span>
+                </div>
+              </div>
+              <button class="btn btn-outline btn-sm open-case-modal" data-project="fintech" style="width: 100%; margin-top: 1rem;">
+                <i class="fas fa-eye"></i> Ver Caso de Estudio
+              </button>
+            </div>
+          </div>
+
+          <!-- Case 2: AI Flow -->
+          <div class="portfolio-card reveal reveal-delay-1" data-category="ai">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/images/case_ai_flow.jpg" alt="Synapse AI Automation Platform" width="600" height="340" />
+              <span class="portfolio-category-badge">AI Automation SaaS</span>
+            </div>
+            <div class="portfolio-content">
+              <div>
+                <h3 class="portfolio-title">Synapse AI: Orquestador de Agentes Autónomos</h3>
+                <p class="portfolio-desc">
+                  Constructor visual de flujos de trabajo con integración de LLMs para automatización de onboarding y procesamiento de datos corporativos.
+                </p>
+                <div class="portfolio-metrics-row">
+                  <div class="p-metric">
+                    <h5>+65%</h5>
+                    <span>Ahorro de Tiempo</span>
+                  </div>
+                  <div class="p-metric">
+                    <h5>1.2M+</h5>
+                    <span>Flujos Diarios</span>
+                  </div>
+                </div>
+                <div class="portfolio-tags">
+                  <span class="portfolio-tag">Python</span>
+                  <span class="portfolio-tag">FastAPI</span>
+                  <span class="portfolio-tag">LangChain</span>
+                  <span class="portfolio-tag">OpenAI</span>
+                </div>
+              </div>
+              <button class="btn btn-outline btn-sm open-case-modal" data-project="ai_flow" style="width: 100%; margin-top: 1rem;">
+                <i class="fas fa-eye"></i> Ver Caso de Estudio
+              </button>
+            </div>
+          </div>
+
+          <!-- Case 3: Logistics SaaS -->
+          <div class="portfolio-card reveal reveal-delay-2" data-category="logistics">
+            <div class="portfolio-img-wrapper">
+              <img src="assets/images/case_logistics_saas.jpg" alt="Nexus Logistics Global Tracking Dashboard" width="600" height="340" />
+              <span class="portfolio-category-badge">Logística & Cloud</span>
+            </div>
+            <div class="portfolio-content">
+              <div>
+                <h3 class="portfolio-title">Nexus Logistics: Rastreo Global y Cadena de Suministro</h3>
+                <p class="portfolio-desc">
+                  Sistema integral de telemetría y ruteo inteligente para flota de transporte internacional con mapas interactivos y analítica IoT.
+                </p>
+                <div class="portfolio-metrics-row">
+                  <div class="p-metric">
+                    <h5>96.8%</h5>
+                    <span>Entregas a Tiempo</span>
+                  </div>
+                  <div class="p-metric">
+                    <h5>+35%</h5>
+                    <span>Rutas Optimizadas</span>
+                  </div>
+                </div>
+                <div class="portfolio-tags">
+                  <span class="portfolio-tag">Go (Golang)</span>
+                  <span class="portfolio-tag">AWS IoT</span>
+                  <span class="portfolio-tag">Mapbox</span>
+                  <span class="portfolio-tag">Kubernetes</span>
+                </div>
+              </div>
+              <button class="btn btn-outline btn-sm open-case-modal" data-project="logistics" style="width: 100%; margin-top: 1rem;">
+                <i class="fas fa-eye"></i> Ver Caso de Estudio
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Why Choose Altum / Strategic Advantages
+         ========================================================================== -->
+    <section class="section" id="ventajas">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge"><i class="fas fa-gem"></i> Valor Diferencial</span>
+          <h2 class="section-title">¿Por Qué Elegir a <span class="gradient-text">Altum Software</span>?</h2>
+          <p class="section-subtitle">No somos una agencia convencional de freelancers; somos tu socio tecnológico estratégico a largo plazo.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fas fa-code"></i></div>
+            <div class="benefit-info">
+              <h4>Código Limpio y Escalable</h4>
+              <p>Escribimos software siguiendo principios SOLID, patrones de diseño limpios y pruebas automatizadas que facilitan el crecimiento futuro.</p>
+            </div>
+          </div>
+
+          <div class="benefit-card reveal reveal-delay-1">
+            <div class="benefit-icon" style="color: var(--accent-purple);"><i class="fas fa-file-contract"></i></div>
+            <div class="benefit-info">
+              <h4>100% Propiedad Intelectual</h4>
+              <p>El código fuente, repositorios, accesos de servidores y propiedad del producto pertenecen en su totalidad a tu empresa desde el día uno.</p>
+            </div>
+          </div>
+
+          <div class="benefit-card reveal reveal-delay-2">
+            <div class="benefit-icon" style="color: var(--accent-cyan);"><i class="fas fa-comments"></i></div>
+            <div class="benefit-info">
+              <h4>Comunicación Directa y Transparente</h4>
+              <p>Hablas directamente con ingenieros de software senior a través de Slack, Teams o WhatsApp, sin intermediarios comerciales que retrasen respuestas.</p>
+            </div>
+          </div>
+
+          <div class="benefit-card reveal">
+            <div class="benefit-icon" style="color: var(--accent-emerald);"><i class="fas fa-stopwatch"></i></div>
+            <div class="benefit-info">
+              <h4>Entregas Puntuales Garantizadas</h4>
+              <p>Planificación rigurosa basada en puntos de historia y sprints. Cumplimos con los hitos comprometidos sin retrasos injustificados.</p>
+            </div>
+          </div>
+
+          <div class="benefit-card reveal reveal-delay-1">
+            <div class="benefit-icon" style="color: #F59E0B;"><i class="fas fa-shield-check"></i></div>
+            <div class="benefit-info">
+              <h4>Garantía y Soporte Post-Lanzamiento</h4>
+              <p>Brindamos periodo de garantía extendido para corrección de incidencias y planes de mantenimiento preventivo y evolutivo.</p>
+            </div>
+          </div>
+
+          <div class="benefit-card reveal reveal-delay-2">
+            <div class="benefit-icon" style="color: #EC4899;"><i class="fas fa-chart-line"></i></div>
+            <div class="benefit-info">
+              <h4>Enfoque en Retorno de Inversión</h4>
+              <p>No desarrollamos características innecesarias. Diseñamos arquitectura tecnológica orientada al impacto financiero y objetivos de negocio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Testimonials Section
+         ========================================================================== -->
+    <section class="section" id="testimonios" style="background: rgba(255,255,255,0.01);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge"><i class="fas fa-star"></i> Testimonios Reales</span>
+          <h2 class="section-title">La Confianza de <span class="gradient-text">Nuestros Clientes</span></h2>
+          <p class="section-subtitle">Empresas que confiaron en nosotros para transformar sus operaciones a través de tecnología a la medida.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="testimonial-card reveal">
+            <div>
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "Altum Software construyó nuestra plataforma SaaS desde cero en solo 10 semanas. Su rigor técnico y capacidad para proponer soluciones nos ahorró meses de desarrollo."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">MR</div>
+              <div class="author-details">
+                <h5>Mauricio Rodríguez</h5>
+                <span>CTO, Nexus FinTech Solutions</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-1">
+            <div>
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "La integración de agentes de Inteligencia Artificial que implementaron automatizó más del 60% de nuestras consultas operativas. La inversión se pagó sola en el primer trimestre."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: var(--gradient-purple);">VS</div>
+              <div class="author-details">
+                <h5>Valeria Silva</h5>
+                <span>Head of Product, AlphaX Automations</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-2">
+            <div>
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "Excelente comunicación y transparencia total con los presupuestos. Migraron nuestra infraestructura a la nube sin un solo minuto de interrupción del servicio."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: var(--gradient-accent);">JG</div>
+              <div class="author-details">
+                <h5>Jorge González</h5>
+                <span>Director de Operaciones, TransOcean Logistics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ Section
+         ========================================================================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge"><i class="fas fa-circle-question"></i> Dudas Frecuentes</span>
+          <h2 class="section-title">Preguntas Frecuentes sobre <span class="gradient-text">Nuestros Servicios</span></h2>
+          <p class="section-subtitle">Resolvemos las inquietudes más comunes antes de comenzar a trabajar juntos.</p>
+        </div>
+
+        <div class="faq-container reveal">
+          <!-- FAQ 1 -->
+          <div class="faq-item open">
+            <div class="faq-header">
+              <span class="faq-question">¿Quién es el dueño del código fuente y la propiedad intelectual?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-body">
+              <p>Tu empresa es la única propietaria legal del 100% del código fuente, diseños en Figma, bases de datos y propiedad intelectual. Todo se transfiere formalmente bajo contrato al concluir el proyecto.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">¿Firmamos un acuerdo de confidencialidad (NDA) antes de iniciar?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-body">
+              <p>Sí, absolutamente. Antes de cualquier reunión estratégica o intercambio de requerimientos técnicos, firmamos un Acuerdo de Confidencialidad y No Divulgación (NDA) para proteger tu idea y secretos comerciales.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">¿Cuánto tiempo toma desarrollar una aplicación o plataforma completa?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-body">
+              <p>Un Producto Mínimo Viable (MVP) funcional suele tomar entre 3 y 6 semanas. Proyectos más complejos con múltiples integraciones, paneles y aplicaciones móviles suelen oscilar entre 8 y 16 semanas divididas en sprints quincenales.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">¿Cómo se estructuran los pagos del proyecto?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-body">
+              <p>Trabajamos bajo esquemas de hitos claros: típicamente 30% al inicio, 30% a la entrega del MVP en Staging, y 40% al despliegue final en producción tras validación del cliente. También ofrecemos esquemas mensuales para equipos dedicados.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">¿Ofrecen soporte y mantenimiento después del lanzamiento?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-body">
+              <p>Sí. Todos los proyectos cuentan con 30 días de garantía total post-lanzamiento sin costo adicional. Posteriormente ofrecemos planes de soporte continuo (SLA 24/7, parches de seguridad, optimización y desarrollo de nuevas funcionalidades).</p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">¿Qué pasa si necesito cambios o nuevas funciones durante el desarrollo?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-body">
+              <p>Utilizamos metodología ágil Scrum, lo que permite flexibilidad para ajustar prioridades al final de cada sprint. Si surgen nuevos módulos, los evaluamos y presupuestamos de manera transparente sin frenar el flujo de trabajo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact Section & Lead Form
+         ========================================================================== -->
+    <section class="section" id="contacto" style="background: rgba(255,255,255,0.01);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge"><i class="fas fa-envelope-open-text"></i> Hablemos de tu Proyecto</span>
+          <h2 class="section-title">Construyamos Juntos tu <span class="gradient-text">Próxima Gran Solución</span></h2>
+          <p class="section-subtitle">Cuéntanos tu visión o necesidad tecnológica. Un líder de ingeniería responderá en menos de 2 horas hábiles.</p>
+        </div>
+
+        <div class="contact-wrapper reveal">
+          <!-- Left Info Panel -->
+          <div class="contact-info-panel">
+            <div>
+              <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Información de Contacto Directo</h3>
+              <p style="font-size: 0.95rem;">Agenda una llamada de descubrimiento de 20 minutos con uno de nuestros arquitectos de software.</p>
+
+              <div class="contact-direct-list">
+                <div class="contact-direct-item">
+                  <div class="contact-icon-box">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="contact-direct-text">
+                    <h6>Correo Electrónico</h6>
+                    <a href="mailto:contacto@altumsoftware.com">contacto@altumsoftware.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-direct-item">
+                  <div class="contact-icon-box" style="color: #25D366; background: rgba(37, 211, 102, 0.1);">
+                    <i class="fab fa-whatsapp"></i>
+                  </div>
+                  <div class="contact-direct-text">
+                    <h6>WhatsApp Corporativo</h6>
+                    <a href="https://api.whatsapp.com/send?phone=5215500000000" target="_blank" rel="noopener">+52 (55) 0000-0000</a>
+                  </div>
+                </div>
+
+                <div class="contact-direct-item">
+                  <div class="contact-icon-box" style="color: var(--accent-purple); background: rgba(139, 92, 246, 0.1);">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div class="contact-direct-text">
+                    <h6>Modalidad de Trabajo</h6>
+                    <p>Remoto Global / Presencial LATAM & USA</p>
+                  </div>
+                </div>
+
+                <div class="contact-direct-item">
+                  <div class="contact-icon-box" style="color: var(--accent-cyan); background: rgba(6, 182, 212, 0.1);">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div class="contact-direct-text">
+                    <h6>Horario de Atención</h6>
+                    <p>Lunes a Viernes: 08:00 - 19:00 (GMT-5)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="background: rgba(59, 130, 246, 0.08); border: 1px dashed rgba(59, 130, 246, 0.3); border-radius: 12px; padding: 1.25rem;">
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">
+                🔒 <strong>Confidencialidad Garantizada:</strong> Todos los datos y especificaciones compartidos están protegidos por nuestro acuerdo de privacidad estándar.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Form Panel -->
+          <div class="contact-form-panel">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Nombre Completo *</label>
+                  <input type="text" id="contactName" class="form-control" placeholder="Ej. Carlos Mendoza" required />
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Correo Corporativo *</label>
+                  <input type="email" id="contactEmail" class="form-control" placeholder="carlos@empresa.com" required />
+                </div>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="contactPhone" class="form-label">Teléfono / WhatsApp</label>
+                  <input type="tel" id="contactPhone" class="form-control" placeholder="+52 55 1234 5678" />
+                </div>
+                <div class="form-group">
+                  <label for="contactService" class="form-label">Servicio Requerido</label>
+                  <select id="contactService" class="form-control">
+                    <option value="web_app">Desarrollo Web & SaaS a Medida</option>
+                    <option value="mobile_app">Desarrollo de App Móvil (iOS/Android)</option>
+                    <option value="ai_solution">Inteligencia Artificial & Automatización</option>
+                    <option value="cloud_devops">Cloud Infrastructure & DevOps</option>
+                    <option value="ui_ux">Diseño UI/UX & Prototipado</option>
+                    <option value="audit">Auditoría, Refactor o Seguridad</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Detalles del Proyecto o Necesidad *</label>
+                <textarea id="contactMessage" class="form-control" placeholder="Cuéntanos brevemente sobre tu proyecto, objetivos, plazos deseados..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i> Enviar Mensaje y Solicitar Propuesta
+              </button>
+
+              <div id="formFeedback" class="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Project Details Modal Dialog
+       ========================================================================== -->
+  <div id="projectModal" class="modal-overlay" aria-hidden="true" role="dialog">
+    <div class="modal-container">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Cerrar ventana">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="modalContent" class="modal-body">
+        <!-- Injected dynamically via js/portfolio.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Floating WhatsApp Widget
+       ========================================================================== -->
+  <div class="floating-whatsapp">
+    <div class="whatsapp-bubble">
+      ¿Tienes una idea en mente? ¡Escríbenos! 🚀
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=5215500000000&text=Hola%20Altum%20Software,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20desarrollo." 
+       target="_blank" 
+       rel="noopener" 
+       class="whatsapp-btn-float" 
+       aria-label="Contactar por WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="whatsapp-notification-dot"></span>
+    </a>
+  </div>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-cube"></i>
+            </div>
+            <div class="logo-text">Altum<span>Software</span></div>
+          </a>
+          <p>
+            Ingeniería de software de alta calidad, desarrollo de aplicaciones personalizadas, soluciones de Inteligencia Artificial y Cloud DevOps para empresas globales.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="mailto:contacto@altumsoftware.com" class="social-icon-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Servicios</h5>
+          <ul class="footer-links">
+            <li><a href="#servicios">Desarrollo Web & SaaS</a></li>
+            <li><a href="#servicios">Apps Móviles iOS & Android</a></li>
+            <li><a href="#servicios">Inteligencia Artificial & LLMs</a></li>
+            <li><a href="#servicios">Cloud & Arquitectura DevOps</a></li>
+            <li><a href="#servicios">Diseño UI/UX & Prototipos</a></li>
+            <li><a href="#servicios">Auditoría de Código y Seguridad</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Enlaces Rápidos</h5>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#cotizador">Cotizador Interactivo</a></li>
+            <li><a href="#tecnologias">Stack Tecnológico</a></li>
+            <li><a href="#proceso">Metodología de Trabajo</a></li>
+            <li><a href="#portafolio">Casos de Estudio</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Garantía & Confianza</h5>
+          <ul class="footer-links">
+            <li><a href="#contacto"><i class="fas fa-shield-halved" style="color: var(--accent-emerald);"></i> Acuerdo NDA 100%</a></li>
+            <li><a href="#contacto"><i class="fas fa-code" style="color: var(--primary-light);"></i> Código 100% Propietario</a></li>
+            <li><a href="#contacto"><i class="fas fa-clock" style="color: var(--accent-cyan);"></i> Soporte Post-Lanzamiento</a></li>
+            <li><a href="#contacto"><i class="fas fa-server" style="color: #F59E0B;"></i> Despliegue en Servidor Propio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear">2026</span> Altum Software. Todos los derechos reservados.
+        </div>
+        <div>
+          Desarrollado con altos estándares de calidad, seguridad y rendimiento.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/estimator.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
